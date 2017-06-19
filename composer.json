@@ -1,0 +1,34 @@
+{
+    "name": "nkrantz/deployer-recipes",
+    "description": "A few useful deployer recipes",
+    "type": "library",
+    "keywords": [
+        "deployer",
+        "recipes",
+        "deploy",
+        "deployment",
+        "slack",
+        "php"
+    ],
+    "homepage": "https://github.com/nkrantz23/deployer-recipes",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nate Krantz",
+            "email": "nkrantz23@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "~7.0",
+        "deployer/deployer": "^5.0"
+    },
+    "support": {
+        "issues": "https://github.com/nkrantz23/deployer-recipes/issues",
+        "source": "https://github.com/nkrantz23/deployer-recipes"
+    },
+    "autoload": {
+        "psr-4": {
+            "Deployer\\": "src/"
+        }
+    }
+}
