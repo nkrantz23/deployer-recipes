@@ -6,6 +6,7 @@ require 'recipe/laravel.php';
 
 set('laravel_version', 5.3);
 set('cache_config', true);
+set('branch', 'develop');
 
 task('upload:env', function () {
     upload('.env-{{app_env}}', '{{deploy_path}}/shared/.env');
