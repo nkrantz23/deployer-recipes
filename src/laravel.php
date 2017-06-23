@@ -7,9 +7,10 @@ require 'recipe/laravel.php';
 set('laravel_version', 5.3);
 set('cache_config', true);
 set('branch', 'develop');
+set('env_separator', '-');
 
 task('upload:env', function () {
-    upload('.env-{{app_env}}', '{{deploy_path}}/shared/.env');
+    upload('.env{{env_separator}}{{app_env}}', '{{deploy_path}}/shared/.env');
 })->desc('Upload the environment to the remote host');
 
 task('php-fpm:restart', function () {
