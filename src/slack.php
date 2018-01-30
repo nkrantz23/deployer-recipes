@@ -14,7 +14,7 @@ task('deploy:slack', function () use ($startTime) {
     
     // Deploy information
     
-    $deployUser = get('deploying_as', trim(runLocally('git config --get user.name')));
+    $deployUser = get('deploying_as', 'anonyomous');
     $deployEnv = get('stage');
     $version = get('branch');
     $versionLabel = 'branch';
