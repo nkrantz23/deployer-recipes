@@ -55,7 +55,7 @@ task('deploy', [
     'artisan:config:cache',
     'deploy:symlink',
     'artisan:optimize',
-    'php-fpm:restart',
+    'php-fpm:reload',
     'deploy:unlock',
     'cleanup',
 ]);
