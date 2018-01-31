@@ -19,6 +19,12 @@ task('php-fpm:restart', function () {
     }
 })->desc('Restart php-fpm to clear opcache');
 
+task('php-fpm:reload', function () {
+    if (get('reload_fpm')) {
+        run('sudo service php7.1-fpm reload');
+    }
+})->desc('Reload php-fpm to clear opcache');
+
 task('artisan:config:clear', function () {
     run('{{bin/php}} {{release_path}}/artisan config:clear');
 })->desc('Clear the configuration cache');
