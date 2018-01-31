@@ -15,15 +15,9 @@ task('upload:env', function () {
 
 task('php-fpm:restart', function () {
     if (get('restart_fpm')) {
-        run('sudo service php7.1-fpm restart');    
-    }
-})->desc('Restart php-fpm to clear opcache');
-
-task('php-fpm:reload', function () {
-    if (get('reload_fpm')) {
         run('sudo service php7.1-fpm reload');
     }
-})->desc('Reload php-fpm to clear opcache');
+})->desc('Restart php-fpm to clear opcache');
 
 task('artisan:config:clear', function () {
     run('{{bin/php}} {{release_path}}/artisan config:clear');
