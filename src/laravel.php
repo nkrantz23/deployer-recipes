@@ -50,7 +50,6 @@ task('deploy', [
     'deploy:writable',
     'artisan:storage:link',
     'artisan:view:clear',
-    'artisan:cache:clear',
     'artisan:config:clear',
     'artisan:config:cache',
     'deploy:symlink',
