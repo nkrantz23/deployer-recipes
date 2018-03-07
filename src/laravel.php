@@ -52,7 +52,6 @@ task('deploy', [
     'artisan:view:clear',
     'artisan:config:clear',
     'artisan:config:cache',
-    'artisan:route:cache',
     'deploy:symlink',
     'artisan:optimize',
     'php-fpm:reload',
