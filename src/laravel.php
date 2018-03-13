@@ -4,7 +4,7 @@ namespace Deployer;
 
 require 'recipe/laravel.php';
 
-set('laravel_version', 5.3);
+set('laravel_version', 5.6);
 set('cache_config', true);
 set('branch', 'develop');
 set('env_separator', '-');
