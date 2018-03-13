@@ -20,7 +20,7 @@
     ],
     "require": {
         "php": "~7.0",
-        "deployer/deployer": "^5.0"
+        "deployer/deployer": "6.1.*"
     },
     "support": {
         "issues": "https://github.com/nkrantz23/deployer-recipes/issues",
